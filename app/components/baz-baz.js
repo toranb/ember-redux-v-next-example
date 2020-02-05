@@ -4,6 +4,7 @@ import { tracked } from '@glimmer/tracking';
 import { connect } from 'ember-redux';
 
 const stateToComputed = function(state, attrs) {
+  console.log(this.color);
   return {
     number: state.fooz,
     greeting: `Hello ${attrs.name}!`
